@@ -1,0 +1,122 @@
+body {
+    background-image: url(../img/battleback1.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: 'Joyful Juliana', sans-serif;
+}
+
+.iop {
+    height: 300px;
+    width: 250px;
+    transition: transform 330ms ease-in-out;
+}
+
+.iop:hover {
+    transform: translate(120px, -7vh);
+}
+
+.cybwork {
+    height: 250px;
+    width: 250px;
+    transition: transform 330ms ease-in-out;
+}
+
+.cybwork:hover {
+    transform: translate(-120px, -7vh);
+}
+
+.linkform {
+    text-decoration: none;
+    color: #198754;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.thisEndNow {
+    transition: transform 530ms ease-in-out;
+}
+
+.thisEndNow:hover:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(3px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(6px, 0, 0);
+    }
+}
+
+.prepareToDie {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.vs {
+    width: 900px;
+    transition: transform 330ms ease-in-out;
+}
+
+.vs:hover {
+    transform: scale(1.5);
+}
+
+
+@media screen and (max-width: 600px) {
+    .vs {
+        width: 300px;
+    }
+
+    .thisEndNow {
+        width: 250px;
+    }
+
+    .iop {
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .cybwork {
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
